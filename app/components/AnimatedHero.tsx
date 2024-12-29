@@ -32,10 +32,10 @@ export default function AnimatedHero() {
   return (
     <div className="flex items-center flex-col justify-center p-10 bg-zinc-200 h-[410px] rounded-lg mb-10">
       <div className="relative text-center animate-bounce ease-in-out duration-3000">
-        <h1 className="md:text-5xl sm:text-2xl font-bold text-amber-600">
+        <h1 className="md:text-5xl sm:text-2xl text-2xl font-bold text-amber-600">
           {texts[activeIndex].title}
         </h1>
-        <p className="md:text-2xl sm:text-xl text-2xl text-muted-foreground">
+        <p className="md:text-2xl sm:text-xl text-lg text-muted-foreground">
           {texts[activeIndex].description}
         </p>
       </div>
