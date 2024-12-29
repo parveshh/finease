@@ -18,7 +18,7 @@ export default function Home() {
   return (
     <>
    <AnimatedHero/>
-      <div className="flex md:flex-row sm:flex-col sm:items-center sm:w-full gap-10 justify-start w-full">
+      <div className="flex flex-col md:flex-row sm:flex-col sm:items-center sm:w-full gap-10 justify-start w-full">
         <Card className="md:w-1/3">
           <CardHeader>
             <CardTitle>
