@@ -2,12 +2,11 @@ import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
-import { Dock, FileStack, ScrollText, TimerIcon } from "lucide-react";
+import { FileStack, ScrollText, TimerIcon } from "lucide-react";
 import TextHero from "../components/textHero";
 import  AnimatedHero  from "../components/AnimatedHero";
 
