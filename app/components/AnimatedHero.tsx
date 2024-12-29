@@ -27,7 +27,7 @@ export default function AnimatedHero() {
     }, 3000); // 4 seconds interval
 
     return () => clearInterval(interval);
-  }, []);
+  }, [texts.length]);
 
   return (
     <div className="flex items-center flex-col justify-center p-10 bg-zinc-200 h-[410px] rounded-lg mb-10">
