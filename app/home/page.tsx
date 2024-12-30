@@ -10,17 +10,35 @@ import { FileStack, ScrollText, TimerIcon } from "lucide-react";
 import TextHero from "../components/textHero";
 import  AnimatedHero  from "../components/AnimatedHero";
 import BlobHero from "../components/BlobHero";
+import GradientButton from "../components/GradientButton";
 
 export const metadata = {
   title: "Home",
 };
 
 export default function Home() {
+    const texts = [
+        {
+          title: "Effortless Bank Statement to CSV Conversion",
+          description:
+            "Simplify your financial data management with our seamless bank statement-to-CSV conversion tool.",
+        },
+        {
+          title: "Fast, Accurate, and Reliable",
+          description:
+            "Experience the future of financial data conversion with ease and precision.",
+        },
+        {
+          title: "Join Us Today!",
+          description:
+            "Sign up now and start transforming your financial workflow.",
+        },
+      ];
   return (
     <>
     {/* <BlobHero /> */}
-   <AnimatedHero/>
-      <div className="flex flex-col md:flex-row sm:flex-col sm:items-center sm:w-full gap-10 justify-start w-full dark:text-zinc-200">
+   <AnimatedHero texts={texts} />
+      <div className="flex flex-col md:flex-row sm:flex-col justify-center  sm:w-full gap-10  w-full dark:text-zinc-200">
         <Card className="md:w-1/3">
           <CardHeader>
             <CardTitle>
@@ -40,7 +58,9 @@ export default function Home() {
               files ready for analysis, accounting, or reporting.
             </p>
           </CardContent>
-          <CardFooter></CardFooter>
+          <CardFooter>
+ 
+          </CardFooter>
         </Card>
         <Card className="md:w-1/3">
           <CardHeader>
@@ -88,7 +108,7 @@ export default function Home() {
       <div className="w-full flex flex-col justify-center items-center pt-10 dark:text-zinc-200">
       Managing financial data shouldn’t be a hassle. Our AI-powered platform effortlessly converts your bank statements into clean, accurate CSV files in seconds. Whether you’re an accountant, financial analyst, or business owner, simplify your workflow and eliminate tedious manual data entry.
         <TextHero text="Empower Your Financial Insights – Start Converting Today!" />
-        <Button variant={"outline"}>Get Started</Button>
+        <GradientButton className="bg-gradient-to-r from-indigo-500 via-purple-600  to-pink-500">Convert Now</GradientButton>
       </div>
     </>
   );

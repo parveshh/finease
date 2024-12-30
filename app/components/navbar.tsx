@@ -1,7 +1,10 @@
 'use client'
 import Link from "next/link";
 import { useTheme } from "next-themes";
-
+import {
+  SunIcon
+} from "lucide-react";
+import { Button } from "@/components/ui/button";
 export function Navbar() {
   const { theme, setTheme } = useTheme();
   return (
@@ -20,10 +23,10 @@ export function Navbar() {
             Home
           </Link>
           <Link
-            href="/about"
+            href="/subscribe"
             className="text-sm font-medium transition-colors hover:text-amber-500"
           >
-            About
+            Subscribe
           </Link>
           <Link
             href="/login"
@@ -37,12 +40,10 @@ export function Navbar() {
           >
             Signup
           </Link>
-          <button
-            onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
-            className="text-sm font-medium transition-colors hover:text-amber-500"
-          >
-            Toggle Theme
-          </button>
+          <span className="mx-2  h-5 w-px bg-gray-500"></span>
+
+            <SunIcon size={20} className="cursor-pointer hover:text-amber-500" onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')} />
+      
         </div>
       </div>
     </div>
