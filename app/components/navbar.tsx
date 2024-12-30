@@ -1,7 +1,9 @@
-import Link from "next/link"
-
+'use client'
+import Link from "next/link";
+import { useTheme } from "next-themes";
 
 export function Navbar() {
+  const { theme, setTheme } = useTheme();
   return (
     <div className="border-b flex items-center w-full">
       <div className="flex h-16 items-center px-4 container mx-auto">
@@ -35,6 +37,12 @@ export function Navbar() {
           >
             Signup
           </Link>
+          <button
+            onClick={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+            className="text-sm font-medium transition-colors hover:text-amber-500"
+          >
+            Toggle Theme
+          </button>
         </div>
       </div>
     </div>

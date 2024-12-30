@@ -1,7 +1,7 @@
 import type { Config } from "tailwindcss";
 
 export default {
-    darkMode: ["class"],
+    darkMode:'selector',
     content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -11,6 +11,9 @@ export default {
   	extend: {
 		transitionDuration:{
 			'3000': '3000ms',
+		},
+		backgroundColor: {
+			'bg-gradient': 'radial-gradient(at 42% 65%, #202040 0px, transparent 50%), radial-gradient(at 33% 15%, #202060 0px, transparent 50%), radial-gradient(at 32% 21%, #602080 0px, transparent 50%), radial-gradient(at 30% 97%, #b030b0 0px, transparent 50%), #202040',
 		},
   		colors: {
   			background: 'hsl(var(--background))',
@@ -96,12 +99,25 @@ export default {
 				'100%' : {
 					opacity: '0',
 				}
-			}
+			},
+			'blob-move': {
+				'0%, 100%': { transform: 'translateY(-50%) translateX(-10%) scale(1)' },
+				'50%': { transform: 'translateY(-10px) scale(1.5)' },
+			},
+			'blob-move-random': {
+				'0%': { transform: 'translate(0,0) scale(1)' },
+				'25%': { transform: 'translate(-100px, 10px) scale(1.1)' },
+				'50%': { transform: 'translate(-10px, 100px) scale(0.95)' },
+				'60%': { transform: 'translate(-80px, 10px) scale(1.2)' },
+				'100%': { transform: 'translate(0, 0) scale(1)' },
+			},
   		},
   		animation: {
   			'accordion-down': 'accordion-down 0.2s ease-out',
   			'accordion-up': 'accordion-up 0.2s ease-out',
-			'hero-in': 'hero-in 2s ease-out'
+			'hero-in': 'hero-in 2s ease-out',
+			'blob-move': 'blob-move 5s ease-in-out infinite',
+			'blob-move-random': 'blob-move-random 6s ease-in-out infinite',
   		}
   	}
   },
