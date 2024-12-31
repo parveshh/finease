@@ -43,9 +43,9 @@ export function Navbar() {
             href="/"
             className="font-semibold text-lg animate-pulse duration-3000"
           >
-            <div className="flex flex-col items-start leading-tight"> 
-            <span> BankStatement</span>
-            <span className="font-bold text-amber-500">Converter.</span>
+            <div className="flex flex-row items-start leading-tight"> 
+            <span>Smart</span>
+            <span className="font-bold text-amber-500">Extract.</span>
             </div>
           </Link>
         </div>
