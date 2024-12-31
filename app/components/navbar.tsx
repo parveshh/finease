@@ -6,13 +6,7 @@ import { useEffect, useState } from "react";
 export function Navbar() {
   const { theme, setTheme } = useTheme();
   const [open, setOpen] = useState(false);
-  useEffect(() => {
-    if (open) {
-      document.body.classList.add("overflow-hidden");
-    } else {
-      document.body.classList.remove("overflow-hidden");
-    }
-  }, [open]);
+
 
   useEffect(() => {
     const handleResize = () => {
@@ -24,20 +18,41 @@ export function Navbar() {
     return () => window.removeEventListener("resize", handleResize);
   }, [setOpen]);
 
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        open &&
+        event.target instanceof Node &&
+        !document.getElementById("mobile-menu")?.contains(event.target) &&
+        !document.getElementById("mobile-menu-2")?.contains(event.target)
+      ) {
+        setOpen(false);
+      }
+    };
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [open]);
+
   return (
     <div className="border-b flex items-center justify-center w-full">
-      <div className="flex h-16 flex-wrap items-center px-4 container justify-between overflow-visible">
+      <div className="flex h-16 items-center px-4 container justify-between">
         <div className="flex items-center space-x-4">
           <Link
             href="/"
-            className="font-semibold text-2xl animate-pulse duration-3000"
+            className="font-semibold text-lg animate-pulse duration-3000"
           >
-            finease<span className="text-2xl text-amber-500">.</span>
+            <div className="flex flex-col items-start leading-tight"> 
+            <span> BankStatement</span>
+            <span className="font-bold text-amber-500">Converter.</span>
+            </div>
           </Link>
         </div>
         <div className="ml-auto md:flex items-center space-x-4 hidden">
           <Link
             href="/home"
+
             className="text-sm font-medium transition-colors hover:text-amber-500"
           >
             Home
@@ -72,6 +87,7 @@ export function Navbar() {
           data-collapse-toggle="mobile-menu"
           onClick={() => setOpen(!open)}
           type="button"
+          id="mobile-menu-2"
           className="md:hidden ml-3 text-gray-400 hover:text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-300 rounded-lg inline-flex items-center justify-center"
           aria-controls="mobile-menu-2"
           aria-expanded="false"
@@ -102,11 +118,12 @@ export function Navbar() {
             ></path>
           </svg>
         </button>
-        <div className={`flex items-end justify-end mt-2 w-full z-50 md:hidden ${open ? "block" : "hidden"}`} id="mobile-menu">
-        <ul className="flex-col flex gap-5 p-10 w-1/2 dark:bg-slate-800 bg-slate-100 rounded-md mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
+        <div className={`absolute top-10 left-0 right-0 shadow-md flex flex-col items-end justify-end mt-2 w-full z-50 md:hidden ${open ? "block" : "hidden"}`} id="mobile-menu">
+        <ul className="flex-col flex items-end gap-5 p-10 pr-15 w-full dark:bg-neutral-800 bg-slate-100 rounded-md mt-4 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium">
             <li>
               <Link
                 href="/home"
+                onClick={() => setOpen(false)}
                 className="text-sm font-medium transition-colors hover:text-amber-500"
               >
                 Home
@@ -115,6 +132,7 @@ export function Navbar() {
             <li>
               <Link
                 href="/subscribe"
+                onClick={() => setOpen(false)}
                 className="text-sm font-medium transition-colors hover:text-amber-500"
               >
                 Subscribe
