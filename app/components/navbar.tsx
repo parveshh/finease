@@ -4,7 +4,6 @@ import { useTheme } from "next-themes";
 import {
   SunIcon
 } from "lucide-react";
-import { Button } from "@/components/ui/button";
 export function Navbar() {
   const { theme, setTheme } = useTheme();
   return (

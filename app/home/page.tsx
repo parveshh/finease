@@ -1,4 +1,3 @@
-import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -9,7 +8,6 @@ import {
 import { FileStack, ScrollText, TimerIcon } from "lucide-react";
 import TextHero from "../components/textHero";
 import  AnimatedHero  from "../components/AnimatedHero";
-import BlobHero from "../components/BlobHero";
 import GradientButton from "../components/GradientButton";
 
 export const metadata = {
