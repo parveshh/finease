@@ -6,9 +6,9 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { FileStack, ScrollText, TimerIcon } from "lucide-react";
-import TextHero from "../components/textHero";
-import  AnimatedHero  from "../components/AnimatedHero";
-import GradientButton from "../components/GradientButton";
+import TextHero from "@/app/components/textHero";
+import  AnimatedHero  from "@/app/components/AnimatedHero";
+import GradientButton from "@/app/components/GradientButton";
 
 export const metadata = {
   title: "Home",
