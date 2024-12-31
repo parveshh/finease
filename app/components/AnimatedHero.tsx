@@ -27,7 +27,7 @@ export default function AnimatedHero({ texts, className }: AnimatedHeroProps) {
   
     
   return (
-    <div className= {cn("flex items-center flex-col justify-center shadow-zinc-400  bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 h-[350px] rounded-lg mb-10",className)}>
+    <div className= {cn("flex items-center flex-col justify-center shadow-zinc-400  bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 h-[350px] rounded-lg mb-5",className)}>
       <div className="relative text-center animate-bounce ease-in-out duration-3000 p-10">
         <h1 className="md:text-4xl sm:text-xl text-2xl transition-all border-x-pink-50  font-bold text-white animate-in fade-in zoom-in">
           {texts[activeIndex].title}
