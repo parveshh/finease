@@ -7,7 +7,7 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-3">
           <div className="flex flex-row items-start leading-tight"> 
-            <span> Smart</span>
+            <span> Quick</span>
             <span className="font-bold text-amber-500">Extract.</span>
             </div>
             <p className="text-sm text-muted-foreground">
