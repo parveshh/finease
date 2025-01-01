@@ -64,13 +64,13 @@ export function Navbar() {
             Subscribe
           </Link>
           <Link
-            href="/login"
+            href="https://app.quickextract.ai/login"
             className="text-sm font-medium transition-colors hover:text-amber-500"
           >
             Login
           </Link>
           <Link
-            href="/signup"
+            href="https://app.quickextract.ai/register"
             className="text-sm font-medium transition-colors hover:text-amber-500"
           >
             Signup
