@@ -4,6 +4,7 @@ import TextHero from "../components/textHero";
 import Free from "../components/subscriptions/free";
 import Standard from "../components/subscriptions/standard";
 import Premium from "../components/subscriptions/premium";
+import TextAnimation from "../components/TextAnimation";
 
 export default function Subscribe() {
   const texts = [
@@ -27,7 +28,9 @@ export default function Subscribe() {
         className="bg-gradient-to-b from-[#db2777] via-[#ef4444] to-[#f97316]"
         texts={texts}
       />
-      <TextHero text="Empower Your Financial Insights – Choose Your Plan!" />
+      <TextHero>
+        <TextAnimation text="Empower Your Financial Insights – Choose Your Plan!" />
+      </TextHero>
       <div className="flex flex-col md:flex-row justify-evenly transition-all duration-300 gap-5">
         <Free/>
         <Standard />

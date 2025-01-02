@@ -9,6 +9,7 @@ import { FileStack, ScrollText, TimerIcon } from "lucide-react";
 import TextHero from "@/app/components/textHero";
 import  AnimatedHero  from "@/app/components/AnimatedHero";
 import { Button } from "@/components/ui/button";
+import TextAnimation from "../components/TextAnimation";
 // import GradientButton from "@/app/components/GradientButton";
 
 export const metadata = {
@@ -106,7 +107,9 @@ export default function Home() {
       </div>
       <div className="w-full flex flex-col justify-center items-center pt-10 dark:text-zinc-200">
       Managing financial data shouldn’t be a hassle. Our AI-powered platform effortlessly converts your bank statements into clean, accurate CSV files in seconds. Whether you’re an accountant, financial analyst, or business owner, simplify your workflow and eliminate tedious manual data entry.
-        <TextHero text="Empower Your Financial Insights – Start Converting Today!" />
+      <TextHero>
+        <TextAnimation text="Empower Your Financial Insights – Choose Your Plan!" />
+      </TextHero>
         <Button className="bg-gradient-to-r from-indigo-500 via-purple-600  to-pink-500">Convert Now</Button>
       </div>
     </>
