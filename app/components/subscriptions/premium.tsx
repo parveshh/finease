@@ -1,6 +1,6 @@
 "use client"
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
-import { Boxes, Package } from "lucide-react";
+import { Boxes } from "lucide-react";
 import GradientButton from "../GradientButton";
 import { motion } from "motion/react";
 
