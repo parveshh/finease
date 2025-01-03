@@ -9,9 +9,7 @@ export default function Standard() {
         <motion.div
      className="flex-1"
         initial={{ opacity: 0, y: 120 }}
-        animate={{ opacity: 1, y: 0 }}
-        onResize={(e) => console.log(e)}
-        layout
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, type: "spring", ease: "easeInOut" }}
         >
         <Card className="shadow-lg flex-1 transition-all duration-1000">
