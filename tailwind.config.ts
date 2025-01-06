@@ -14,7 +14,9 @@ export default {
 		},
 		backgroundColor: {
 			'bg-gradient': 'radial-gradient(at 42% 65%, #202040 0px, transparent 50%), radial-gradient(at 33% 15%, #202060 0px, transparent 50%), radial-gradient(at 32% 21%, #602080 0px, transparent 50%), radial-gradient(at 30% 97%, #b030b0 0px, transparent 50%), #202040',
+			'dot': 'bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px]'
 		},
+
   		colors: {
   			background: 'hsl(var(--background))',
   			foreground: 'hsl(var(--foreground))',

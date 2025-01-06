@@ -7,9 +7,9 @@ import {
 } from "@/components/ui/card";
 import { FileStack, ScrollText, TimerIcon } from "lucide-react";
 import TextHero from "@/app/components/textHero";
-import  AnimatedHero  from "@/app/components/AnimatedHero";
 import { Button } from "@/components/ui/button";
 import TextAnimation from "../components/TextAnimation";
+import HeroSection from "../components/subscriptions/HeroSection";
 // import GradientButton from "@/app/components/GradientButton";
 
 export const metadata = {
@@ -37,7 +37,7 @@ export default function Home() {
   return (
     <>
     {/* <BlobHero /> */}
-   <AnimatedHero texts={texts} />
+  <HeroSection texts={texts} />
       <div className="flex flex-col md:flex-row sm:flex-col justify-center  sm:w-full gap-10  w-full dark:text-zinc-200">
         <Card className="md:w-1/3">
           <CardHeader>

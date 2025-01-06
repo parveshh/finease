@@ -35,15 +35,17 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body
-        className={`${poppins.variable} ${geistMono.variable} ${geistSans.variable} antialiased min-h-screen`}
+        className={`${poppins.variable} ${geistMono.variable} ${geistSans.variable} antialiased relativemin-h-screen`}
       >
         <ThemeProvider attribute="class" enableSystem={false} value={{ light: 'light', dark: 'dark' }}>
+        <div className="absolute inset-0 bg-neutral-50 dark:bg-neutral-900  dark:bg-[radial-gradient(#223_1px,transparent_2px)] bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:24px_24px]">
         <div className="flex flex-col min-h-screen">
         <Navbar />
         <main className="container mx-auto px-4 py-10 sm:px-6 lg:px-8 flex-grow">
           {children}
         </main>
        <Footer  />
+      </div>
       </div>
       </ThemeProvider>
       </body>
