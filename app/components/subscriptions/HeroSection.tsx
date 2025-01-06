@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useState, useEffect, useMemo } from "react";
-const CHAR_DELAY = 0.025;
+const CHAR_DELAY = 0.06;
 const FADE_DURATION = 0.18;
 const SWAP_DELAY = 5 * 1000;
 
@@ -32,7 +32,7 @@ export default function HeroSection({texts}: HeroSectionProps) {
     return (
 
         <div className="w-full md:h-[300px] h-[200px] flex flex-col items-center justify-center">
-            <h1 className="text-3xl md:text-5xl font-bold mb-2 text-center">
+            <h1 className="text-4xl md:text-7xl font-bold mb-2 text-center">
                 <TextAnimation index={titleIndex}  text={titles[titleIndex].title} />
             </h1>
 
@@ -66,22 +66,24 @@ return (
                 >
                    <motion.span
                      className="font-bold relative z-10 bg-blend-overlay"
-                     key={`${index}-${idx}`}
-                     initial={{ opacity: 0 }}
-                     animate={{ opacity: 1  }}
+                     key={`${index}-${idx}-inner`}
+                     initial={{ opacity: 0, filter: "blur(100px)" }}
+                     animate={{ opacity: 1, filter: "blur(0px)" }}
                      transition={{ duration: 0, ease: "easeInOut", delay: idx * CHAR_DELAY }}
                    >{part}</motion.span>
                    <motion.span
                    key={`${index}-${idx}-box`}
-                   initial={{ opacity: 0 }}
-                   animate={{ opacity: [0, 1,0] }}
+                   initial={{ opacity: 0 , scale: 1 }}
+                   animate={{ opacity: [0, 1,0], scale: [1, 2, 1] }}
                    transition={{ 
                     delay: idx * CHAR_DELAY,
                     duration: FADE_DURATION,
                     ease: "easeInOut",
                     times: [0, 0.08, 1]
                     }}
-                   className="z-0 blur-lg absolute inset-0 left-[1px] top-[9px] bottom-[9px] bg-gradient-to-r from-amber-500 to-amber-600"/>
+                   className="z-0 blur-xl rounded-full absolute inset-0 left-[1px] top-[9px] bottom-[9px]
+                   dark:bg-gradient-to-r dark:from-teal-500 dark:via-teal-400 dark:to-teal-500
+                   bg-gradient-to-r from-amber-500 via-amber-400 to-amber-500"/>
                 </motion.span>
             ))}
         </span>
