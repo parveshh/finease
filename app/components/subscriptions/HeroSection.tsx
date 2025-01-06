@@ -32,7 +32,7 @@ export default function HeroSection({texts}: HeroSectionProps) {
     return (
 
         <div className="w-full md:h-[300px] h-[200px] flex flex-col items-center justify-center">
-            <h1 className="text-4xl md:text-7xl font-bold mb-2 text-center">
+            <h1 className="text-6xl md:text-7xl font-bold mb-2 text-center">
                 <TextAnimation index={titleIndex}  text={titles[titleIndex].title} />
             </h1>
 
