@@ -13,7 +13,7 @@ export default function Page() {
         description: "Transform your bank statements into structured CSV files for effortless analysis and decision-making.",
       }]} />
 
-      <section className="flex flex-row flex-wrap justify-center gap-5 relative">
+      <section className="flex flex-row flex-wrap justify-center gap-5 relative mt-5">
         <motion.div initial={{ opacity: 0 }}  whileInView={{ opacity: 1 }} transition={{ duration: 0.5, staggerChildren: 0.1 }} viewport={{ once: true }} className="absolute z-[-1] bg-gradient-to-b from-amber-500 to-amber-600 rounded-lg h-full left-[calc(50%-1px)] w-[1px]">
           <motion.div className="absolute z-[-1] bg-amber-500 h-2 w-3 rounded-full -right-[2px] top-[calc(5%-1px)]"></motion.div>
           <motion.div className="absolute z-[-1] bg-amber-500 h-2 w-3 rounded-full -right-[12px] top-[calc(15%-1px)]"></motion.div>

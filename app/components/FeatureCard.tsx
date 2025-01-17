@@ -5,7 +5,7 @@ import { motion } from "motion/react";
 
 interface FeatureCardProps {
     title: string;
-    children    : React.ReactNode;
+    children : React.ReactNode;
 }
 
 export default function FeatureCard({ title, children }: FeatureCardProps) {
