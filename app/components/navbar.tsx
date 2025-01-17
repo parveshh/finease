@@ -136,6 +136,16 @@ export function Navbar() {
                 Home
               </Link>
             </li>
+
+            <li>
+              <Link
+                href="/features"
+                onClick={() => setOpen(false)}
+                className="text-sm font-medium transition-colors hover:text-amber-500"
+              >
+                Features
+              </Link>
+            </li>
             <li>
               <Link
                 href="/subscribe"
