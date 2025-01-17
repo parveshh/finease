@@ -10,7 +10,7 @@ interface FeatureCardProps {
 
 export default function FeatureCard({ title, children }: FeatureCardProps) {
     return (
-        <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.5 }} viewport={{ once: true }} className="max-w-xl min-h-[300px]">
+        <motion.div initial={{ opacity: 0, y: 20, scale: 0.85 }} whileInView={{ opacity: 1, y: 0, scale: 1 }} transition={{ duration: 0.5 }} className="max-w-xl min-h-[300px]">
         <Card className="shadow-lg motion-safe:hover:scale-105 transition-all duration-1000 w-full h-full">
             <CardHeader>
             <CardTitle>
