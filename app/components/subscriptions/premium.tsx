@@ -7,12 +7,12 @@ import { motion } from "motion/react";
 export default function Premium() {
     return (
         <motion.div
-           className="flex-1"
+
         initial={{ opacity: 0, y: 160 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: "easeInOut" }}
         >
-        <Card className="shadow-lg flex-1">
+        <Card className="shadow-lg motion-safe:hover:scale-105 transition-all duration-1000">
           <CardHeader>
             <CardTitle>
               <div className="flex flex-row gap-2 items-center w-full justify-between">

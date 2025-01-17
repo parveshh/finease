@@ -58,6 +58,13 @@ export function Navbar() {
             Home
           </Link>
           <Link
+            href="/features"
+
+            className="text-sm font-medium transition-colors hover:text-amber-500"
+          >
+            Features
+          </Link>
+          <Link
             href="/subscribe"
             className="text-sm font-medium transition-colors hover:text-amber-500"
           >

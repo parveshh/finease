@@ -24,7 +24,7 @@ export function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/pricing" className="text-sm text-muted-foreground hover:text-primary">
+                <Link href="/subscribe" className="text-sm text-muted-foreground hover:text-primary">
                   Pricing
                 </Link>
               </li>
