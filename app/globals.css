@@ -5,7 +5,38 @@
 body {
   font-family: var(--font-geist-sans), sans-serif;
 }
-
+@layer utilities {
+.border-animate {
+  border: 2px solid #0000;
+  border-radius: 12px;
+  background: linear-gradient(#131219, #131219) padding-box, linear-gradient(
+      var(--angle),
+      #000000,
+      #ff823a
+    ) border-box;
+  animation: 10s rotateborder ease-out infinite;
+}
+.border-animate-light {
+  border: 3px solid transparent !important;
+  border-radius: 12px;
+  background: linear-gradient(transparent, transparent) padding-box, linear-gradient(
+      var(--angle),
+      transparent,
+      #ff823a
+    ) border-box;
+  animation: 10s rotateborder ease-in-out infinite;
+}
+@property --angle {
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
+}
+@keyframes rotateborder {
+  to {
+    --angle: 360deg;
+  }
+}
+}
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -85,4 +116,5 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+
 }

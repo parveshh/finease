@@ -34,7 +34,7 @@ export default function Subscribe() {
         <Standard />
         <Premium />
       </div>
-      <div className="flex flex-col p-5 transition-all duration-300 gap-5">
+      <div className="flex flex-col mt-10 transition-all duration-300 gap-5">
         <h2 className="text-3xl font-bold text-neutral-500 text-left">
         Frequently Asked Questions?
         </h2>

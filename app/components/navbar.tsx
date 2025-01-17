@@ -157,7 +157,7 @@ export function Navbar() {
             </li>
             <li>
               <Link
-                href="/login"
+                href="https://app.quickextract.ai/login"
                 className="text-sm font-medium transition-colors hover:text-amber-500"
               >
                 Login
@@ -165,7 +165,7 @@ export function Navbar() {
             </li>
             <li>
               <Link
-                href="/signup"
+                href="https://app.quickextract.ai/register"
                 className="text-sm font-medium transition-colors hover:text-amber-500"
               >
                 Signup

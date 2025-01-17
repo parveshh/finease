@@ -9,7 +9,7 @@ export default function Page() {
     <main className="flex flex-col gap-5 relative">
       
       <HeroSection texts={[{
-        title: "Unleash the Power of AI-Powered Financial Data Extraction",
+        title: "Unleash the Power of Intelligent Financial Data Extraction",
         description: "Transform your bank statements into structured CSV files for effortless analysis and decision-making.",
       }]} />
 
