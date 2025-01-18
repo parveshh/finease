@@ -1,3 +1,4 @@
+
 import {
   Card,
   CardContent,
@@ -6,40 +7,41 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { FileStack, ScrollText, TimerIcon } from "lucide-react";
-import TextHero from "@/app/components/textHero";
-import { Button } from "@/components/ui/button";
-import TextAnimation from "../components/TextAnimation";
 import HeroSection from "../components/subscriptions/HeroSection";
-// import GradientButton from "@/app/components/GradientButton";
+import HomeRedirect from "../components/HomeRedirect";
 
 export const metadata = {
   title: "Home",
 };
 
 export default function Home() {
-    const texts = [
-        {
-          title: "Effortless Bank Statement to CSV Conversion",
-          description:
-            "Simplify your financial data management with our seamless bank statement-to-CSV conversion tool.",
-        },
-        {
-          title: "Fast, Accurate, and Reliable",
-          description:
-            "Experience the future of financial data conversion with ease and precision.",
-        },
-        {
-          title: "Join Us Today!",
-          description:
-            "Sign up now and start transforming your financial workflow.",
-        },
-      ];
+
+
+
+  const texts = [
+    {
+      title: "Effortless Bank Statement to CSV Conversion",
+      description:
+        "Simplify your financial data management with our seamless bank statement-to-CSV conversion tool.",
+    },
+    {
+      title: "Fast, Accurate, and Reliable",
+      description:
+        "Experience the future of financial data conversion with ease and precision.",
+    },
+    {
+      title: "Join Us Today!",
+      description:
+        "Sign up now and start transforming your financial workflow.",
+    },
+  ];
+
   return (
     <>
-    {/* <BlobHero /> */}
-  <HeroSection texts={texts} />
+      {/* <BlobHero /> */}
+      <HeroSection texts={texts} />
       <div className="flex flex-col md:flex-row sm:flex-col justify-center  sm:w-full gap-10  w-full dark:text-zinc-200">
-        <Card className="md:w-1/3">
+        <Card className="md:w-1/3 ring-1 ring-amber-500/50 shadow-xl">
           <CardHeader>
             <CardTitle>
               <div className="flex flex-row gap-2 items-center">
@@ -58,11 +60,9 @@ export default function Home() {
               files ready for analysis, accounting, or reporting.
             </p>
           </CardContent>
-          <CardFooter>
- 
-          </CardFooter>
+          <CardFooter></CardFooter>
         </Card>
-        <Card className="md:w-1/3">
+        <Card className="md:w-1/3 ring-1 ring-amber-500/50 shadow-xl">
           <CardHeader>
             <CardTitle>
               <div className="flex flex-row gap-2 items-center">
@@ -83,7 +83,7 @@ export default function Home() {
           </CardContent>
           <CardFooter></CardFooter>
         </Card>
-        <Card className="md:w-1/3">
+        <Card className="md:w-1/3 ring-1 ring-amber-500/50 shadow-xl">
           <CardHeader>
             <CardTitle>
               <div className="flex flex-row gap-2 items-center">
@@ -106,11 +106,11 @@ export default function Home() {
         </Card>
       </div>
       <div className="w-full flex flex-col justify-center items-center pt-10 dark:text-zinc-200">
-      Managing financial data shouldn’t be a hassle. Our AI-powered platform effortlessly converts your bank statements into clean, accurate CSV files in seconds. Whether you’re an accountant, financial analyst, or business owner, simplify your workflow and eliminate tedious manual data entry.
-      <TextHero>
-        <TextAnimation text="Empower Your Financial Insights – Choose Your Plan!" />
-      </TextHero>
-        <Button className="bg-gradient-to-r from-indigo-500 via-purple-600  to-pink-500">Convert Now</Button>
+        Managing financial data shouldn’t be a hassle. Our AI-powered platform
+        effortlessly converts your bank statements into clean, accurate CSV files
+        in seconds. Whether you’re an accountant, financial analyst, or business
+        owner, simplify your workflow and eliminate tedious manual data entry.
+       <HomeRedirect />
       </div>
     </>
   );

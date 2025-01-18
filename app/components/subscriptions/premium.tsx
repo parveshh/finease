@@ -8,11 +8,11 @@ export default function Premium() {
     return (
         <motion.div
 
-        initial={{ opacity: 0, y: 160 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 160 , scale: 0.85}}
+        whileInView={{ opacity: 1, y: 0 , scale: 1}}
         transition={{ duration: 0.5, ease: "easeInOut" }}
         >
-        <Card className="shadow-lg motion-safe:hover:scale-105 transition-all duration-1000">
+        <Card className="shadow-lg motion-safe:hover:scale-105 transition-all duration-1000 ring-1 ring-amber-500/50">
           <CardHeader>
             <CardTitle>
               <div className="flex flex-row gap-2 items-center w-full justify-between">

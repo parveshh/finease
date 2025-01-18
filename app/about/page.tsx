@@ -21,22 +21,22 @@ const AboutUs = () => {
       <h2 className="text-xl font-semibold mb-4">What We Offer</h2>
       <ul className="list-disc list-inside mb-6 space-y-2">
         <li>
-          **Free Plan:** Convert up to 10 pages per month, perfect for trying out our platform risk-free.
+          <span className="font-bold">Free Plan:</span> Convert up to 10 pages per month, perfect for trying out our platform risk-free.
         </li>
         <li>
-          **Advanced Technology:** AI-powered dual parsers ensure high accuracy for diverse document formats.
+          <span className="font-bold">Advanced Technology:</span> AI-powered dual parsers ensure high accuracy for diverse document formats.
         </li>
         <li>
-          **Security First:** End-to-end encryption and automatic file deletion to protect your data.
+          <span className="font-bold">Security First:</span> End-to-end encryption and automatic file deletion to protect your data.
         </li>
         <li>
-          **Scalable Solutions:** Flexible plans for individuals, small businesses, and large enterprises.
+          <span className="font-bold">Scalable Solutions:</span> Flexible plans for individuals, small businesses, and large enterprises.
         </li>
       </ul>
 
       <h2 className="text-xl font-semibold mb-4">Why Choose Us?</h2>
       <p className="mb-6">
-        With years of expertise and a customer-first approach, we are dedicated to providing exceptional service. Our platform is designed to save time, reduce errors, and make financial data management seamless.  
+        We aim to provide exceptional service. Our platform is designed to save time, reduce errors, and make financial data management seamless.  
       </p>
 
       <h2 className="text-xl font-semibold mb-4">Get in Touch</h2>
@@ -45,10 +45,10 @@ const AboutUs = () => {
       </p>
       <ul className="list-disc list-inside mb-6 space-y-2">
         <li>
-          <strong>Email:</strong> support@quickextract.ai
+          <span className="font-bold">Email:</span> support@quickextract.ai
         </li>
         <li>
-          <strong>Address:</strong>  97 Jubilee Street BECKENHAM WA 6107
+          <span className="font-bold">Address:</span>  97 Jubilee Street BECKENHAM WA 6107
         </li>
       </ul>
 

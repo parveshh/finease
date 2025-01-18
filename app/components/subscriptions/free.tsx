@@ -7,11 +7,11 @@ import { motion } from "motion/react";
 export default function Free() {
     return (
         <motion.div
-        initial={{ opacity: 0, y: 100 }}
-        whileInView={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 100 , scale: 0.85}}
+        whileInView={{ opacity: 1, y: 0 , scale: 1}}
         transition={{ duration: 0.5, ease: "easeInOut" }}
         >
-        <Card className="shadow-lg motion-safe:hover:scale-105 transition-all duration-1000">
+        <Card className="shadow-lg motion-safe:hover:scale-105 transition-all duration-1000 ring-1 ring-amber-500/50">
           <CardHeader>
             <CardTitle>
               <div className="flex flex-row gap-2 items-center w-full justify-between">
@@ -37,7 +37,7 @@ export default function Free() {
             </CardContent>
           <CardFooter className="p-5">
             <div className="flex items-center w-full justify-center">
-              <Button variant="default" size="lg" className="p-6 px-20">
+              <Button variant="default" size="lg" className="p-6 px-20 font-bold text-lg hover:scale-105 transition-all duration-300">
                 Get Free
               </Button>
             </div>
