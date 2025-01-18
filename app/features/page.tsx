@@ -1,6 +1,5 @@
 "use client";
 import FeatureCard from "../components/FeatureCard";
-
 import HeroSection from "../components/subscriptions/HeroSection";
 import { motion } from "motion/react";
 
