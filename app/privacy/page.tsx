@@ -118,9 +118,6 @@ const PrivacyPolicy = () => {
           <li>
             <strong>Email:</strong> support@quickextract.ai
           </li>
-          <li>
-            <strong>Address:</strong> 97 Jubilee Street BECKENHAM WA 6107
-          </li>
         </ul>
   
         <p className="mt-6">

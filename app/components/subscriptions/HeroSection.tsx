@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useState, useEffect, useMemo } from "react";
+// import Rain from "../Rain";
 const CHAR_DELAY = 0.06;
 const FADE_DURATION = 0.18;
 const SWAP_DELAY = 5 * 1000;
@@ -27,7 +28,8 @@ export default function HeroSection({ texts }: HeroSectionProps) {
   }, [texts]);
 
   return (
-    <div className="w-full md:h-[450px] h-[350px] flex flex-col items-center justify-center">
+    <div className="w-full md:h-[450px] h-[350px] flex flex-col items-center justify-center relative">
+      {/* <Rain /> */}
       <h1 className="text-6xl md:text-7xl font-bold mb-2 text-center">
         <TextAnimation index={titleIndex} text={titles[titleIndex].title} />
       </h1>

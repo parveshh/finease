@@ -24,7 +24,7 @@ const AboutUs = () => {
           <span className="font-bold">Free Plan:</span> Convert up to 10 pages per month, perfect for trying out our platform risk-free.
         </li>
         <li>
-          <span className="font-bold">Advanced Technology:</span> AI-powered dual parsers ensure high accuracy for diverse document formats.
+          <span className="font-bold">Advanced Technology:</span> Intelligent dual parsers ensure high accuracy for diverse document formats.
         </li>
         <li>
           <span className="font-bold">Security First:</span> End-to-end encryption and automatic file deletion to protect your data.
@@ -46,9 +46,6 @@ const AboutUs = () => {
       <ul className="list-disc list-inside mb-6 space-y-2">
         <li>
           <span className="font-bold">Email:</span> support@quickextract.ai
-        </li>
-        <li>
-          <span className="font-bold">Address:</span>  97 Jubilee Street BECKENHAM WA 6107
         </li>
       </ul>
 

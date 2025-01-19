@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { HouseIcon, MailCheck, Phone } from "lucide-react";
+import { MailCheck } from "lucide-react";
 import React from "react";
 
 const ContactUs = () => {
@@ -26,26 +26,6 @@ const ContactUs = () => {
               >
                 support@quickextract.ai
               </a>
-            </p>
-          </div>
-        </div>
-
-        <div className="flex items-center">
-         <Phone className="w-12 h-12 flex justify-center items-center text-neutral-300" />
-          <div className="ml-4">
-            <h2 className="text-lg font-semibold">Call Us</h2>
-            <p>Phone: +1 (123) 456-7890</p>
-          </div>
-        </div>
-
-        <div className="flex items-center">
-       <HouseIcon className="w-12 h-12 flex justify-center items-center text-neutral-300" />
-          <div className="ml-4">
-            <h2 className="text-lg font-semibold">Visit Us</h2>
-            <p>
-            QuickExtract
-              <br />
-              97 Jubilee Street <br/> BECKENHAM WA 6107
             </p>
           </div>
         </div>
