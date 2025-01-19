@@ -31,9 +31,9 @@ export default function Page() {
           both outputs and download the version that fits your needs perfectly.
         </FeatureCard>
 
-        <FeatureCard title="AI-Powered Data Extraction">
-          Leverage advanced AI and OCR technology to extract transaction data
-          from PDFs, Excel files, and scanned images with precision, minimizing
+        <FeatureCard title="Intelligent Financial Data Extraction">
+          Leverage advanced Intelligent OCR technology to extract transaction data
+          from PDFs, Tiff files, and scanned images with precision, minimizing
           errors and manual effort.
         </FeatureCard>
 
@@ -44,7 +44,7 @@ export default function Page() {
         </FeatureCard>
 
         <FeatureCard title="Support for Multiple Formats">
-          Upload bank statements in PDF, Excel, or scanned image formats, and
+          Upload bank statements in PDF, Tiff, or scanned image formats, and
           our tool will process them seamlessly into CSV files ready for
           analysis.
         </FeatureCard>
