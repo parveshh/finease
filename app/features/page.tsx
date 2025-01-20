@@ -67,7 +67,7 @@ export default function Page() {
         </FeatureCard>
 
         <FeatureCard title="Flexible Subscription Plans">
-          Start with our free plan, and when you’re ready to unlock more
+          Start with our free plan, and when you&apos;re ready to unlock more
           features, upgrade to one of our affordable paid plans for unlimited
           conversions.
         </FeatureCard>

@@ -5,6 +5,9 @@ import GradientButton from "../GradientButton";
 import { motion } from "motion/react";
 
 export default function Premium() {
+  const navigate = () => {
+    window.location.href = "https://app.quickextract.ai/register?plan=premium";
+    };
     return (
         <motion.div
 
@@ -38,7 +41,7 @@ export default function Premium() {
             </CardContent>
           <CardFooter className="p-5">
           <div className="flex items-center w-full justify-center">
-              <GradientButton  className="p-6 px-20">
+              <GradientButton  className="p-6 px-20" onClick={navigate}>
                 Get Premium
               </GradientButton>
             </div>

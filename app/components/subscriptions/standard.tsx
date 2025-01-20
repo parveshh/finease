@@ -5,6 +5,10 @@ import { Package } from "lucide-react";
 import { motion } from "motion/react";
 
 export default function Standard() {
+  const navigate = () => {
+    window.location.href = "https://app.quickextract.ai/register?plan=basic";
+  };
+
     return (
         <motion.div
 
@@ -17,7 +21,7 @@ export default function Standard() {
             <CardTitle>
               <div className="flex flex-row gap-2 items-center w-full justify-between">
                 <h6 className="font-semibold text-2xl text-zinc-700 text-center dark:text-zinc-200">
-                  Standard
+                  Basic
                 </h6>
                 <Package size={40} className="text-zinc-500 dark:text-zinc-200" />
               </div>
@@ -38,8 +42,8 @@ export default function Standard() {
             </CardContent>
             <CardFooter className="p-5">
             <div className="flex items-center w-full justify-center">
-              <Button size="lg" variant="default" className="p-6 px-20 font-bold text-lg hover:scale-105 transition-all duration-300">
-                Get Standard
+              <Button size="lg" variant="default" className="p-6 px-20 font-bold text-lg hover:scale-105 transition-all duration-300" onClick={navigate}>
+                Get Basic
               </Button>
             </div>
             </CardFooter>
