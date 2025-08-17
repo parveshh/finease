@@ -27,7 +27,7 @@ export default function Subscribe() {
     <div className="flex flex-col">
       <HeroSection texts={texts} />
       <TextHero>
-        <TextAnimation text="Lets Get Started – Choose Your Plan!" />
+        <TextAnimation text="Start Free – Upgrade Anytime in the App" />
       </TextHero>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
         <Free/>

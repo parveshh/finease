@@ -7,7 +7,7 @@ import { motion } from "motion/react";
 export default function Free() {
 
   const navigate = () => {
-    window.location.href = "https://app.quickextract.ai/register?plan=free";
+    window.location.href = "https://app.quickextract.ai/register";
   };
   return (
     <motion.div
@@ -26,7 +26,7 @@ export default function Free() {
               </div>
               <CardDescription>
                 <p className="text-lg text-zinc-500 dark:text-zinc-200">
-                  15 pages per month
+                  1 page per day
                 </p>
               </CardDescription>
             </CardTitle>
@@ -39,12 +39,15 @@ export default function Free() {
                 </span>
               </div>
             </CardContent>
-          <CardFooter className="p-5">
+          <CardFooter className="p-5 flex flex-col items-center gap-2">
             <div className="flex items-center w-full justify-center">
               <Button variant="default" size="lg" className="p-6 px-20 font-bold text-lg hover:scale-105 transition-all duration-300" onClick={navigate}>
-                Get Free
+                Start Free
               </Button>
             </div>
+            <p className="mt-3 w-full text-center text-sm text-zinc-600 dark:text-zinc-300">
+              No card required. Upgrade anytime from your dashboard.
+            </p>
           </CardFooter>
         </Card>
     </motion.div>

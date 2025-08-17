@@ -6,7 +6,8 @@ import { motion } from "motion/react";
 
 export default function Premium() {
   const navigate = () => {
-    window.location.href = "https://app.quickextract.ai/register?plan=premium";
+    // Users now sign up for free and upgrade inside the app after login
+    window.location.href = "https://app.quickextract.ai/login";
     };
     return (
         <motion.div
@@ -26,7 +27,7 @@ export default function Premium() {
               </div>
               <CardDescription>
                 <p className="text-lg text-zinc-500 dark:text-zinc-200">
-                  300 pages per month
+                  250 pages per month
                 </p>
               </CardDescription>
             </CardTitle>
@@ -39,12 +40,15 @@ export default function Premium() {
                 </span>
               </div>
             </CardContent>
-          <CardFooter className="p-5">
+          <CardFooter className="p-5 flex flex-col items-center gap-2">
           <div className="flex items-center w-full justify-center">
               <GradientButton  className="p-6 px-20" onClick={navigate}>
-                Get Premium
+                Log in to Upgrade
               </GradientButton>
             </div>
+            <p className="mt-3 w-full text-center text-sm text-zinc-600 dark:text-zinc-300">
+              Start on the free plan. Upgrade anytime from your dashboard.
+            </p>
           </CardFooter>
         </Card>
         </motion.div>

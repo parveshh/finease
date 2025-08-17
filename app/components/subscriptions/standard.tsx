@@ -6,7 +6,8 @@ import { motion } from "motion/react";
 
 export default function Standard() {
   const navigate = () => {
-    window.location.href = "https://app.quickextract.ai/register?plan=basic";
+    // Users now sign up for free and upgrade inside the app after login
+    window.location.href = "https://app.quickextract.ai/login";
   };
 
     return (
@@ -40,12 +41,15 @@ export default function Standard() {
                 </span>
               </div>
             </CardContent>
-            <CardFooter className="p-5">
+            <CardFooter className="p-5 flex flex-col items-center gap-2">
             <div className="flex items-center w-full justify-center">
               <Button size="lg" variant="default" className="p-6 px-20 font-bold text-lg hover:scale-105 transition-all duration-300" onClick={navigate}>
-                Get Basic
+                Log in to Upgrade
               </Button>
             </div>
+            <p className="mt-3 w-full text-center text-sm text-zinc-600 dark:text-zinc-300">
+              Start on the free plan. Upgrade anytime from your dashboard.
+            </p>
             </CardFooter>
         </Card>
         </motion.div>
