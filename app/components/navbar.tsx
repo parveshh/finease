@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useTheme } from "next-themes";
 import { SunIcon } from "lucide-react";
 import { useEffect, useState } from "react";
+import QuickExtractLogo from "./QuickExtractLogo";
 export function Navbar() {
   const { theme, setTheme } = useTheme();
   const [open, setOpen] = useState(false);
@@ -43,9 +44,12 @@ export function Navbar() {
             href="/"
             className="font-semibold text-lg animate-pulse duration-3000"
           >
-            <div className="flex flex-row items-start text-xl leading-tight"> 
-            <span>Quick</span>
-            <span className="font-bold text-amber-500">Extract.</span>
+            <div className="flex items-center leading-none gap-2">
+              <QuickExtractLogo className="h-8 w-8 text-gray-800 dark:text-gray-200" />
+              <div className="flex flex-row items-start text-xl leading-tight">
+                <span className="text-gray-800 dark:text-gray-200">Quick</span>
+                <span className="font-bold text-amber-500">Extract.</span>
+              </div>
             </div>
           </Link>
         </div>
